@@ -19,6 +19,7 @@ if ($user_input) {
     $_SESSION['password'] = $user_password;
 
 
+
 }
 
 
@@ -46,7 +47,7 @@ if ($user_input) {
             <div class="card-body">
                 <form method="GET" class="row d-flex justify-between p-2">
                     <label for="user-length" class="col-6">Scegli la lunghezza della tua password</label>
-                    <input type="number" min='1' max="100" name="user-length" id="user-length" class="col-6"
+                    <input type="number" min='4' max="100" name="user-length" id="user-length" class="col-6"
                         value="<?= isset($password_length) ? $password_length : '' ?>">
                     <button class="btn btn-primary mt-4 col-1">Invia</button>
                 </form>
